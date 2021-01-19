@@ -1,0 +1,2 @@
+<!--pages/info/info.wxml-->
+<text bindtap="nav">pages/info/info.wxml</text>

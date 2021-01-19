@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="barrage">
+  <block wx:for="{{barrageData}}" wx:key="id">
+    <text class="item" style="animation: animate {{item.time}}s linear forwards; top:{{item.top}}%; color:{{item.color}};">
+        {{item.text}}
+    </text>
+  </block>
+</view>
+
+<view class="bottom">
+  <input type="text" value="{{value}}" bindinput="input"/>
+  <view bindtap="bindbt">发送</view>
+</view>
